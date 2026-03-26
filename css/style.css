@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    /* WEBSITE BACKGROUND IMAGE */
+
+    background-image: url("../images/landscape.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+/* HEADER */
+
+header {
+
+    background-color: white;
+
+    color: #333;
+
+    padding: 15px 40px;
+
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+nav a {
+
+    color: #333;
+
+    margin-left: 20px;
+
+    text-decoration: none;
+
+}
+
+/* HERO SECTION */
+
+.hero {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    text-align: center;
+
+    /* HERO BACKGROUND IMAGE */
+
+    background-image:
+
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+
+        url("../images/landscape.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+/* BUTTON */
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    background-color: orange;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+/* CONTENT SECTION */
+
+.content {
+
+    padding: 40px;
+
+    background-color: white;
+
+}
+
+/* PACKAGES SECTION */
+
+.packages {
+
+    padding: 40px;
+
+    background-color: white;
+
+    text-align: center;
+
+}
+
+.packages h2 {
+
+    margin-bottom: 30px;
+
+    font-size: 32px;
+
+    color: #333;
+
+}
+
+.card-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
+}
+
+.card {
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    background-color: white;
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+}
+
+.card h3 {
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    color: #333;
+
+}
+
+.card p {
+
+    padding: 0 15px 15px 15px;
+
+    color: #666;
+
+}
+
+/* FOOTER */
+
+footer {
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-top: 1px solid #ddd;
+
+}
