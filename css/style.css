@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
 
 /* SECTION SPACING */
 section {
-    padding: 60px 80px;
+    padding: 50px 80px;
 }
 
 /* HEADER */
@@ -54,6 +54,20 @@ nav a:hover {
 
     background-size: cover;
     background-position: center;
+
+    position: relative;
+}
+
+/* Overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero * {
+    position: relative;
 }
 
 .hero h1 {
@@ -76,7 +90,7 @@ button {
     font-size: 16px;
     border-radius: 30px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
@@ -106,7 +120,7 @@ button:hover {
     overflow: hidden;
     background: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -131,35 +145,79 @@ button:hover {
 
 /* TESTIMONIALS */
 .testimonials {
-    background-color: #f9f9f9;
+    background-color: white;
     text-align: center;
+    padding: 40px 80px;
 }
 
 .testimonials h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
+/* Review container */
+#reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Review card */
 #reviews p {
-    margin: 10px 0;
+    background: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     font-style: italic;
     color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease;
+}
+
+#reviews p:hover {
+    transform: translateY(-5px);
 }
 
 /* NEWSLETTER */
 .newsletter {
     text-align: center;
     background: white;
+    padding-top: 30px;
 }
 
+/* Heading */
+.newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Input box */
 .newsletter input {
     padding: 12px;
     width: 250px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
+    outline: none;
 }
 
+/* Button */
 .newsletter button {
+    padding: 12px 25px;
     margin-left: 10px;
+    border-radius: 25px;
+}
+
+/* Hover */
+.newsletter button:hover {
+    transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -172,11 +230,25 @@ footer {
 .footer-top {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    align-items: flex-start;
 }
 
 .footer-col {
     flex: 1;
+}
+
+/* Align columns */
+.footer-col:nth-child(2) {
+    text-align: center;
+}
+
+.footer-col:nth-child(3) {
+    text-align: right;
+}
+
+.footer-col p {
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 .footer-col ul {
@@ -186,11 +258,21 @@ footer {
 
 .footer-col ul li {
     margin-bottom: 10px;
+    transition: 0.3s;
 }
 
+.footer-col ul li:hover {
+    color: #ff7a00;
+    cursor: pointer;
+}
+
+/* Footer bottom */
 .footer-bottom {
     text-align: center;
-    background: black;
-    padding: 10px;
-    margin-top: 20px;
+    background: #111;
+    padding: 6px;
+    font-size: 13px;
+    margin-top: 15px;
+    border-top: 1px solid #333;
+    width: 100%;
 }
