@@ -1,4 +1,4 @@
-const container = document.getElementById("allPackages");
+const packageContainer = document.getElementById("allPackages");
 packages.forEach(pkg =>{
     const  card=`
     <div class="card">
@@ -7,5 +7,5 @@ packages.forEach(pkg =>{
     <p>${pkg.price} • ${pkg.duration}</p>
     </div>
     `;
-    container.innerHTML+=card;
+    packageContainer.innerHTML+=card;
 })
