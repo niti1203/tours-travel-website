@@ -4,6 +4,8 @@ const images = [
   "images/landscape.jpg",
   "images/goa.jpg",
   "images/manali.jpg"
+  "images/kashmir.jpg"
+  "images/kerala.jpg"
 ];
 
 hero.style.backgroundImage = `
