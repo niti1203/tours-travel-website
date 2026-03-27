@@ -276,3 +276,41 @@ footer {
     border-top: 1px solid #333;
     width: 100%;
 }
+
+/*about page styling*/
+.about{
+    background: white;
+    text-align: center;
+}
+
+.about h2{
+    margin-bottom: 30px;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/*image portion style*/
+.about-img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.about-img img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+/*text prtion style*/
+.about-text{
+    max-width: 500px;
+    text-align: left;
+    line-height: 1.7;
+}
