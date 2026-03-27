@@ -1,7 +1,7 @@
 
 const container = document.getElementById("packageContainer");
 
-packages.forEach(pkg => {
+packages.slice(0,4).forEach(pkg => {
   container.innerHTML += `
     <div class="card">
       <img src="${pkg.image}">
