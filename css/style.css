@@ -312,10 +312,6 @@ footer {
     text-align: left;
     line-height: 1.7;
 }
-
-
-
-
 /* CONTACT PAGE */
 
 .contact {
@@ -466,4 +462,19 @@ button:hover {
 
     background-color: darkorange;
 
+}
+
+/*destinations*/
+#destinationsContainer .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+}
+
+#destinationsContainer .card h3 {
+    color: #ff7a00;
+}
+#destinationsContainer .card:hover {
+    transform: scale(1.03);
 }
