@@ -1,8 +1,8 @@
 
-const container = document.getElementById("packageContainer");
+const homePackageContainer = document.getElementById("packageContainer");
 
 packages.slice(0,4).forEach(pkg => {
-  container.innerHTML += `
+  homePackageContainer.innerHTML += `
     <div class="card">
       <img src="${pkg.image}">
       <h3>${pkg.title}</h3>
