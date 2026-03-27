@@ -312,3 +312,81 @@ footer {
     text-align: left;
     line-height: 1.7;
 }
+
+
+
+
+/* CONTACT PAGE */
+
+.contact {
+
+    padding: 50px;
+
+    background-color: white;
+
+}
+
+.contact h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+.contact-container {
+
+    width: 40%;
+
+    margin: auto;
+
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+label {
+
+    margin-top: 15px;
+
+}
+
+input,
+textarea {
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border-radius: 5px;
+
+    border: 1px solid gray;
+
+}
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    background-color: orange;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: darkorange;
+
+}
