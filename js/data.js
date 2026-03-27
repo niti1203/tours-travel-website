@@ -55,3 +55,46 @@ const reviews = [
   "Highly recommended!",
   "Loved every moment!"
 ];
+
+const destinations = [
+    {
+        image: "images/goa.jpg",
+        title: "Goa",
+        description: "Beautiful beaches, vibrant nightlife, and coastal vibes"
+    },
+    {
+        image: "images/manali.jpg",
+        title: "Manali",
+        description: "Snowy mountains and adventure"
+    },
+    {
+        image: "images/kashmir.jpg",
+        title: "Kashmir",
+        description: "Stunning valleys, lakes, and breathtaking landscapes"
+    },
+    {
+        image: "images/kerala.jpg",
+        title: "Kerala",
+        description: "Backwaters, greenery, and peaceful houseboat stays"
+    },
+    {
+        image: "images/dubai.jpg",
+        title: "Dubai",
+        description: "Luxury lifestyle, skyscrapers, and desert adventures"
+    },
+    {
+        image: "images/paris.jpg",
+        title: "Paris",
+        description: "Romantic atmosphere, iconic landmarks, and culture"
+    },
+    {
+        image: "images/bali.jpg",
+        title: "Bali",
+        description: "Tropical paradise with beaches and temples"
+    },
+    {
+        image: "images/singapore.jpg",
+        title: "Singapore",
+        description: "Modern skyline, luxury shopping, and shopping"
+    }
+];
