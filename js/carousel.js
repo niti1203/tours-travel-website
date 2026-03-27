@@ -3,8 +3,8 @@ const hero = document.querySelector(".hero");
 const images = [
   "images/landscape.jpg",
   "images/goa.jpg",
-  "images/manali.jpg"
-  "images/kashmir.jpg"
+  "images/manali.jpg",
+  "images/kashmir.jpg",
   "images/kerala.jpg"
 ];
 
