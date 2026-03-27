@@ -390,3 +390,80 @@ button:hover {
     background-color: darkorange;
 
 }
+
+
+
+/* BOOKING PAGE */
+
+.booking {
+
+    padding: 50px;
+
+    background-color: white;
+
+}
+
+.booking h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+.booking-container {
+
+    width: 40%;
+
+    margin: auto;
+
+}
+
+.booking form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.booking label {
+
+    margin-top: 15px;
+
+}
+
+.booking input,
+.booking select {
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border-radius: 5px;
+
+    border: 1px solid gray;
+
+}
+
+.booking button {
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    background-color: orange;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.booking button:hover {
+
+    background-color: darkorange;
+
+}
