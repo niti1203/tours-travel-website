@@ -16,6 +16,10 @@ body {
 section {
     padding: 50px 80px;
 }
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
 
 /* HEADER */
 header {
@@ -103,10 +107,6 @@ button:hover {
     background-color: white;
 }
 
-.packages h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
 
 .card-container {
     display: grid;
@@ -283,9 +283,7 @@ footer {
     text-align: center;
 }
 
-.about h2{
-    margin-bottom: 30px;
-}
+
 
 .about-container{
     display: flex;
