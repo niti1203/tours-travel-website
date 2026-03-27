@@ -1,204 +1,196 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
 
-    font-family: Arial, sans-serif;
-
-    /* WEBSITE BACKGROUND IMAGE */
-
-    background-image: url("../images/landscape.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-
+/* SECTION SPACING */
+section {
+    padding: 60px 80px;
 }
 
 /* HEADER */
-
 header {
-
-    background-color: white;
-
-    color: #333;
-
-    padding: 15px 40px;
-
+    background: white;
+    padding: 15px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .navbar {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
 }
 
 nav a {
-
     color: #333;
-
-    margin-left: 20px;
-
+    margin-left: 25px;
     text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
 
+nav a:hover {
+    color: #ff7a00;
 }
 
 /* HERO SECTION */
-
 .hero {
-
     height: 100vh;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     color: white;
-
     text-align: center;
 
-    /* HERO BACKGROUND IMAGE */
-
-    background-image:
-
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-        ),
-
-        url("../images/landscape.jpg");
-
     background-size: cover;
-
     background-position: center;
+}
 
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
 }
 
 /* BUTTON */
-
 button {
-
     margin-top: 20px;
-
-    padding: 12px 25px;
-
+    padding: 12px 30px;
     border: none;
-
-    background-color: orange;
-
+    background: linear-gradient(45deg, #ff7a00, #ffb347);
     color: white;
-
     font-size: 16px;
-
+    border-radius: 30px;
     cursor: pointer;
-
+    transition: 0.3s;
 }
 
-/* CONTENT SECTION */
-
-.content {
-
-    padding: 40px;
-
-    background-color: white;
-
+button:hover {
+    transform: scale(1.05);
 }
 
-/* PACKAGES SECTION */
-
+/* PACKAGES */
 .packages {
-
-    padding: 40px;
-
-    background-color: white;
-
     text-align: center;
-
+    background-color: white;
 }
 
 .packages h2 {
-
-    margin-bottom: 30px;
-
     font-size: 32px;
-
-    color: #333;
-
+    margin-bottom: 30px;
 }
 
 .card-container {
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    gap: 20px;
-
+    gap: 25px;
 }
 
+/* CARD */
 .card {
-
-    border-radius: 8px;
-
+    border-radius: 12px;
     overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-    background-color: white;
-
+.card:hover {
+    transform: translateY(-8px);
 }
 
 .card img {
-
     width: 100%;
-
     height: 200px;
-
     object-fit: cover;
-
 }
 
 .card h3 {
-
     padding: 15px;
-
     font-size: 20px;
-
-    color: #333;
-
 }
 
 .card p {
+    padding: 0 15px 15px;
+    color: #777;
+}
 
-    padding: 0 15px 15px 15px;
+/* TESTIMONIALS */
+.testimonials {
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
-    color: #666;
+.testimonials h2 {
+    margin-bottom: 20px;
+}
 
+#reviews p {
+    margin: 10px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    background: white;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    margin-left: 10px;
 }
 
 /* FOOTER */
-
 footer {
+    background: #1e1e1e;
+    color: white;
+    padding: 40px 60px;
+}
 
-    background-color: white;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
-    padding: 40px;
+.footer-col {
+    flex: 1;
+}
 
-    border-top: 1px solid #ddd;
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
 
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
 }
