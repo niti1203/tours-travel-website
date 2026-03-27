@@ -1,4 +1,4 @@
-const container = document.getElementById("destinationsContainer");
+const destinationContainer = document.getElementById("destinationsContainer");
 
 destinations.forEach(dest => {
 
@@ -13,5 +13,5 @@ destinations.forEach(dest => {
     </div>
     `;
 
-    container.innerHTML += card;
+    destinationContainer.innerHTML += card;
 });
